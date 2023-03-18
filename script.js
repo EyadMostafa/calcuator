@@ -5,18 +5,18 @@ const buttons = document.querySelectorAll('input[type="button"]');
 const type = function (button) {
   button.addEventListener(
     "click",
-    () => `${(display.value += button.defaultValue)}`
+    () => (display.value += button.defaultValue)
   );
 };
 
 const reset = function (button) {
-  button.addEventListener("click", () => `${(display.value = "")}`);
+  button.addEventListener("click", () => (display.value = ""));
 };
 
 const de = function (button) {
   button.addEventListener(
     "click",
-    () => `${(display.value = display.value.slice(0, -1))}`
+    () => (display.value = display.value.slice(0, -1))
   );
 };
 

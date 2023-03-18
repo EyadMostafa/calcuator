@@ -5,12 +5,7 @@ const buttons = document.querySelectorAll('input[type="button"]');
 const type = function (button) {
   button.addEventListener(
     "click",
-    () =>
-      `${(display.value += `${
-        typeof button.defaultValue === "number"
-          ? new Big(button.defaultValue)
-          : button.defaultValue
-      }`)}`
+    () => `${(display.value += button.defaultValue)}`
   );
 };
 

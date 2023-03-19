@@ -16,7 +16,7 @@ const reset = function (button) {
 const de = function (button) {
   button.addEventListener(
     "click",
-    () => (display.value = display.value.slice(0, -1))
+    () => (display.value = display.value.at(-1))
   );
 };
 
